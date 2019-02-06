@@ -1,5 +1,8 @@
 # Build
 /dist
 
+# IDE
+/.vscode
+
 # Other
 /node_modules
