@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:dev": "webpack --mode development",
+    "serve:dev": "npm run build:dev && webpack-dev-server --mode development"
   },
   "repository": {
     "type": "git",
@@ -14,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/xRoulanDx/phaser-template/issues"
   },
-  "homepage": "https://github.com/xRoulanDx/phaser-template#readme"
+  "homepage": "https://github.com/xRoulanDx/phaser-template#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.6.0",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.1",
+    "webpack": "^4.29.2",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  }
 }
