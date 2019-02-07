@@ -17,7 +17,7 @@ module.exports = {
 		open: true
 	},
 	resolve: {
-		extensions: ['.ts', '.js']
+		extensions: ['.ts']
 	},
 	plugins: [new CopyWebpackPlugin(['index.html', 'src/styles.css'])]
 };
