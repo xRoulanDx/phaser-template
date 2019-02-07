@@ -2,3 +2,4 @@
 /coverage
 /.vscode
 package-lock.json
+/src/phaser.d.ts
