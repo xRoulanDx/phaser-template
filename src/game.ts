@@ -1,10 +1,9 @@
 import {GameScene} from './scenes/game-scene';
-import {AUTO, Game} from 'phaser';
 
 const config: GameConfig = {
 	width: 800,
 	height: 600,
-	type: AUTO,
+	type: Phaser.AUTO,
 	parent: 'game',
 	scene: GameScene,
 	physics: {
@@ -16,7 +15,7 @@ const config: GameConfig = {
 	}
 };
 
-export class MyGame extends Game {
+export class MyGame extends Phaser.Game {
 	constructor(config: GameConfig) {
 		super(config);
 	}

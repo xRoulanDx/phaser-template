@@ -1,6 +1,4 @@
-import {Scene} from 'phaser';
-
-export class GameScene extends Scene {
+export class GameScene extends Phaser.Scene {
 	constructor() {
 		super({key: 'GameScene'});
 	}
