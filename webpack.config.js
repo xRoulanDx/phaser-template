@@ -1,5 +1,6 @@
 var path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
 	entry: './src/game.ts',
@@ -19,5 +20,8 @@ module.exports = {
 	resolve: {
 		extensions: ['.ts', '.js']
 	},
-	plugins: [new CopyWebpackPlugin(['index.html', 'src/styles.css'])]
+	plugins: [
+		new CleanWebpackPlugin(['dist']),
+		new CopyWebpackPlugin(['index.html', 'src/styles.css'])
+	]
 };
